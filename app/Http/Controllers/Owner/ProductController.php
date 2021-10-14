@@ -57,7 +57,7 @@ class ProductController extends Controller
         ->select('id', 'title','filename')
         ->orderBy('updated_at', 'desc')->get();
         $categories = PrimaryCategory::with('secondary')->get();
-        
+
         return view('owner.products.create', compact('shops', 'images',
         'categories'));
     }
@@ -70,7 +70,7 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // dd($request);
     }
 
     /**
