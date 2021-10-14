@@ -18,7 +18,7 @@
         <div class="flex flex-wrap">
           @foreach ($images as $image)
           <div class="w-1/4 p-2 md:p-4">
-            <div class="border rounded-md p-2 me:p-4">
+            <div class="border rounded-md p-2 md:p-4">
               <img class="image" data-id="{{ $name }}_{{ $image->id }}"
               data-file="{{ $image->filename }}"
               data-path="{{ asset('storage/products/') }}"
@@ -45,5 +45,4 @@
   <img id="{{ $name }}_thumbnail" src="">
   </div>
  </div>
- <input id="{{ $name}}_hidden" type="hidden"
- name="{{ $name }}" value="">
+ <input id="{{ $name}}_hidden" type="hidden" name="{{ $name }}" value="">
