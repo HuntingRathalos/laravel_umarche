@@ -104,12 +104,6 @@ class ImageController extends Controller
         ->with(['message' => '画像情報を更新しました。','status' => 'info']);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function destroy($id)
     {
         $image = Image::findOrFail($id);
